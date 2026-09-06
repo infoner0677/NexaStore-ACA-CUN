@@ -93,3 +93,46 @@ body {
             border: 2px solid black;
 
             }
+
+    /* Contenedor del formulario */
+        #form-contacto {
+            max-width: 500px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+        }
+
+    /* Etiquetas y campos de entrada */
+        #form-contacto label {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-align: left;
+        }
+
+        #form-contacto input,
+        #form-contacto textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+    /* Botón del formulario */
+        #form-contacto button {
+            padding: 12px;
+            background-color: #1d4ed8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #form-contacto button:hover {
+            background-color: #1e40af;
+        }
