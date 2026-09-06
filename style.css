@@ -26,6 +26,10 @@ body {
         margin: 0 20px;
         font-size: 18px;
         }
+    #carrito-contador {
+        color: #ffffff;
+        font-weight: bold; /* Opcional: para darle el mismo grosor que los enlaces */
+        }
 
     /* perzonalizacion parrafo */    
     
