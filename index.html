@@ -31,6 +31,8 @@
                 <a href="#">Inicio</a>
                 <a href="#productos">Productos</a>
                 <a href="#contacto">Contacto</a>
+                <!-- Elemento interactivo para el carrito -->
+                <span id="carrito-contador">🛒 Carrito: 0 productos</span>
             </nav>
 
 
@@ -68,7 +70,7 @@
                             $2.899.000
                         </p>
 
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Pc gama baja', 2899000)">
                             Agregar al carrito
                         </button>
 
