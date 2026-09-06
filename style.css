@@ -1,0 +1,91 @@
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #e0e3e7;
+    }
+
+    /* perzonalizacion titulo principal */
+    h1 {
+        background-color: #1e293b;
+        color: white;
+        text-align: center;
+        padding: 22px;
+        }
+    /* perzonalizacion navegacion inicio y otros... */
+       
+    nav {
+        background-color: #334155;
+        text-align: center;
+        padding: 15px;
+        }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 18px;
+        }
+
+    /* perzonalizacion parrafo */    
+    
+    p   {
+        text-align: center;
+        font-size: 18px;
+        }
+
+
+    /* perzonalizacion titulo productos... */
+        h2 {
+        
+        padding: 20px;
+        text-align: center;
+        }
+        
+        
+    /* Imagen de los productos */
+        .producto-img {
+            width: 200px;
+            height: 150px;
+            object-fit: contain;
+            }
+            
+    /* para agrandar la imagen*/
+        
+        .producto-img:hover {
+             transform: scale(2);
+            }
+
+     
+    /* personalizacion recuadros de los productos */ 
+            
+        section {
+            
+             display: flex;
+            justify-content: center;
+            }
+
+        h3 {
+            text-align: center;
+            }
+            
+        section div {
+            text-align: center;
+            background-color: rgba(133, 121, 121, 0.574);
+            width: 250px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 30px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            }
+
+    /* perzonalizacion boton de añadir al carrito */        
+
+        button {
+            background-color: #2058d2;
+            color: white;
+            padding: 10px;
+            border: 2px solid black;
+
+            }
