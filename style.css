@@ -71,7 +71,7 @@ main {
 }
 
 .descripcion-tienda {
-    text-align: center;
+    text-align: justify;
     font-size: 1.1rem;
     color: #475569;
     max-width: 800px;
