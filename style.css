@@ -1,138 +1,241 @@
+/* ==========================================
+   1. RESET Y ESTILOS GENERALES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    font-family: Arial;
-    background-color: #e0e3e7;
-    }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
 
-    /* perzonalizacion titulo principal */
-    h1 {
-        background-color: #1e293b;
-        color: white;
-        text-align: center;
-        padding: 22px;
-        }
-    /* perzonalizacion navegacion inicio y otros... */
-       
-    nav {
-        background-color: #334155;
-        text-align: center;
-        padding: 15px;
-        }
+/* ==========================================
+   2. ENCABEZADO Y NAVEGACIÓN
+   ========================================== */
+header {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin: 0 20px;
-        font-size: 18px;
-        }
-    #carrito-contador {
-        color: #ffffff;
-        font-weight: bold; /* Opcional: para darle el mismo grosor que los enlaces */
-        }
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
 
-    /* perzonalizacion parrafo */    
-    
-    p   {
-        text-align: center;
-        font-size: 18px;
-        }
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
 
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
 
-    /* perzonalizacion titulo productos... */
-        h2 {
-        
-        padding: 20px;
-        text-align: center;
-        }
-        
-        
-    /* Imagen de los productos */
-        .producto-img {
-            width: 200px;
-            height: 150px;
-            object-fit: contain;
-            }
-            
-    /* para agrandar la imagen*/
-        
-        .producto-img:hover {
-             transform: scale(2);
-            }
+nav a:hover {
+    color: #38bdf8;
+}
 
-     
-    /* personalizacion recuadros de los productos */ 
-            
-        section {
-            
-             display: flex;
-            justify-content: center;
-            }
+/* Contador del carrito */
+#carrito-contador {
+    color: #ffffff;
+    background-color: #2563eb;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
 
-        h3 {
-            text-align: center;
-            }
-            
-        section div {
-            text-align: center;
-            background-color: rgba(133, 121, 121, 0.574);
-            width: 250px;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 30px;
-            border: 2px solid black;
-            box-sizing: border-box;
-            }
+/* ==========================================
+   3. CONTENIDO PRINCIPAL Y CATÁLOGO
+   ========================================== */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
 
-    /* perzonalizacion boton de añadir al carrito */        
+.descripcion-tienda {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #475569;
+    max-width: 900px;
+    margin: 0 auto 2.5rem auto;
+}
 
-        button {
-            background-color: #2058d2;
-            color: white;
-            padding: 10px;
-            border: 2px solid black;
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
 
-            }
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #2563eb;
+    margin: 0.5rem auto 0 auto;
+    border-radius: 2px;
+}
 
-    /* Contenedor del formulario */
-        #form-contacto {
-            max-width: 500px;
-            margin: 20px auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            padding: 20px;
-        }
+/* Layout en Rejilla para los Productos */
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
 
-    /* Etiquetas y campos de entrada */
-        #form-contacto label {
-            font-weight: bold;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            text-align: left;
-        }
+/* Tarjeta individual de producto */
+.tarjeta-producto {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-        #form-contacto input,
-        #form-contacto textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-family: inherit;
-            font-size: 14px;
-        }
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
 
-    /* Botón del formulario */
-        #form-contacto button {
-            padding: 12px;
-            background-color: #1d4ed8;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+.producto-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
 
-        #form-contacto button:hover {
-            background-color: #1e40af;
-        }
+.tarjeta-producto h3 {
+    font-size: 1.2rem;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta-producto p {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.precio {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #059669;
+    margin-bottom: 1rem;
+}
+
+/* Botones de acción */
+.btn-agregar {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-agregar:hover {
+    background-color: #1d4ed8;
+}
+
+/* ==========================================
+   4. SECCIÓN DE CONTACTO (FORMULARIO)
+   ========================================== */
+.formulario-contacto {
+    background-color: #ffffff;
+    max-width: 550px;
+    margin: 0 auto 3rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.formulario-contacto label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.formulario-contacto button[type="submit"] {
+    padding: 0.85rem;
+    background-color: #059669;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.formulario-contacto button[type="submit"]:hover {
+    background-color: #047857;
+}
+
+/* ==========================================
+   5. PIE DE PÁGINA (FOOTER)
+   ========================================== */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}

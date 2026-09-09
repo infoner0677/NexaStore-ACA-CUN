@@ -4,29 +4,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            NexaStore
-        </title>   
-
-    <!-- comunicacion entre css y html -->
-        
+        <title>Novatech</title>
+    <!-- comunicacion entre css y html -->        
     <link rel="stylesheet" href="style.css">
 
     </head>
-    
-    
-        <body>
-        
-        
-            
+      <body>
             <!-- titulo principal -->
-            
-            <h1>
-                NexaStore
-            </h1>
+         <header>
+            <h1>Novatech</h1>
 
             <!-- Navegacion por la pagina -->
-
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#productos">Productos</a>
@@ -34,369 +22,221 @@
                 <!-- Elemento interactivo para el carrito -->
                 <span id="carrito-contador">🛒 Carrito: 0 productos</span>
             </nav>
-
-
+      </header>
+         <main>
             <!-- Parrafo rpincipal -->
-
-            <p>
-            NexaStore es una tienda virtual moderna que ofrece una amplia variedad de productos tecnológicos de calidad, pensados para satisfacer las necesidades de nuestros clientes. Nuestro objetivo es brindar una experiencia de compra fácil, rápida, segura y confiable, permitiendo que cada persona pueda encontrar lo que busca de manera sencilla desde cualquier lugar. En NexaStore nos enfocamos en ofrecer productos con buenas características y precios competitivos, acompañados de una atención cercana y eficiente. Además, buscamos mantener nuestra plataforma actualizada y fácil de utilizar, para que nuestros clientes puedan conocer las características de cada producto, comparar diferentes opciones y realizar sus compras de forma cómoda. Queremos convertirnos en una tienda de confianza para quienes buscan tecnología, ofreciendo un servicio moderno, práctico e innovador.
+            <p class="descripcion-tienda">
+            Novatech es una tienda virtual moderna que ofrece una amplia variedad de productos tecnológicos de calidad, pensados para satisfacer las necesidades de nuestros clientes. Nuestro objetivo es brindar una experiencia de compra fácil, rápida, segura y confiable, permitiendo que cada persona pueda encontrar lo que busca de manera sencilla desde cualquier lugar. En Novatech nos enfocamos en ofrecer productos con buenas características y precios competitivos, acompañados de una atención cercana y eficiente. Además, buscamos mantener nuestra plataforma actualizada y fácil de utilizar, para que nuestros clientes puedan conocer las características de cada producto, comparar diferentes opciones y realizar sus compras de forma cómoda. Queremos convertirnos en una tienda de confianza para quienes buscan tecnología, ofreciendo un servicio moderno, práctico e innovador.
             </p>
 
-
             <!-- En esta division se coloca productos que se venden en la pagina con ID para poder llegar desde la navegacion-->
-            <h2 id="productos">
-            Productos
-            </h2>
+            <h2 id="productos">Productos</h2>
 
-            
-            
-            
-            <!-- Productos categoria numero 1-->
-
-                <section>
-
-                    
-                    <div>
-
+                <section class="catalogo-grid">
+                    <article class="tarjeta-producto">
                         <img src="imagenes/pc 1.jpeg" class="producto-img" alt="Pc gama baja">
-
                         <h3>Pc gama baja</h3>
-
                         <p>
                             Equipo con buen rendimiento para tareas diarias, trabajo, estudio, navegación y entretenimiento, Este equipo es bueno para el trabajo comun grafica para juegos en calidad media/baja.
                         </p>
-
                         <p>
                             $2.899.000
                         </p>
-
                         <button class="btn-agregar" onclick="agregarAlCarrito('Computador Gamer', 2899000)">
                             Agregar al carrito
                         </button>
+                    </article>
 
-                    </div>
-
-
-
-                    <div>
-
+                    <article class="tarjeta-producto">
                         <img src="imagenes/pc 2.jpeg" class="producto-img" alt="Pc gama media">
-
                         <h3>Pc gama media</h3>
-
                         <p>
                             Equipo con buen rendimiento para tareas diarias, trabajo, estudio, navegación y entretenimiento, Este equipo cuenta con buenas especificaciones tecnicas para videojuegos en calidad media/alta. 
                         </p>
-
                         <p>
                             $4.199.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Pc gama media', 4199000)">
                             Agregar al carrito
                         </button>
+                    </article>
 
-                    </div>
-
-
-
-                    <div>
-
+                    <article class="tarjeta-producto">
                         <img src="imagenes/pc 3.jpeg" class="producto-img" alt="Pc gama alta">
-
                         <h3>Pc gama alta</h3>
-
                         <p>
                             Equipo con buen rendimiento para tareas diarias, trabajo, estudio, navegación y entretenimiento equipo con mejores especificaciones en el mercado haciendola buena opcion para juegos recientes que requieren altas especificaciones.
                         </p>
-
                         <p>
                             $6.899.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Pc gama alta', 6899000)">
                             Agregar al carrito
                         </button>
+                    </article>
 
-                    </div>
-
-
-
-                </section>
-
-
-            
-            <!-- Producto categoria numero 2 -->
-            
-            
-                <section>
-
-                    <div>
-
+                    <article class="tarjeta-producto">
                         <img src="imagenes/teclado 1.jpeg" class="producto-img" alt="Teclado logitech">
-
                         <h3>Teclado Logitech</h3>
-
                         <p>
                             Teclado compacto y práctico, diseñado para ahorrar espacio en el escritorio. Sus teclas permiten escribir de manera cómoda y rápida, siendo una buena opción para actividades escolares y de oficina.
                         </p>
-                            
-
                         <p>
                             $165.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Teclado Logitech', 165000)">
                             Agregar al carrito
                         </button>
+                    </article>
 
                         
-                    </div>
-
-                    <div>
-
+                    <article class="tarjeta-producto">
                         <img src="imagenes/teclado 2.jpeg" class="producto-img" alt="Teclado phillips">
-
                         <h3>Teclado Phillips</h3>
-
                         <p>
                             Teclado de tamaño completo con diseño sencillo y cómodo. Cuenta con teclas alfanuméricas, teclas de función y teclado numérico, ideal para estudiar, trabajar y realizar tareas diarias.
                         </p>
-
                         <p>
                             $93.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Teclado Phillips', 93000)">
                             Agregar al carrito
                         </button>
+                    </article>
 
-                    </div>
-
-
-                    <div>
-
+                    <article class="tarjeta-producto">
                         <img src="imagenes/teclado 3.jpeg" class="producto-img" alt="Teclado redragon">
-
                         <h3>Teclado Redragon</h3>
-
                         <p>
                             Teclado moderno con teclas de fácil pulsación y distribución tradicional. Es adecuado para escribir documentos, navegar por internet y utilizar diferentes programas de forma sencilla.
                         </p>
-
                         <p>
                             $298.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Teclado Redragon', 298000)">
                             Agregar al carrito
                         </button>
+                    </article>
 
-                    </div>
-
-
-
-                </section>
-
-
-
-            <!-- Producto categoria numero 3 -->
-                    
-                    
-                    
-                <section>
-
-
-                    <div>
-
+                   <article class="tarjeta-producto"> 
                         <img src="imagenes/monitor 1.jpeg" class="producto-img" alt="Monitor Xiaomi">
-
                         <h3>Monitor Xiaomi</h3>
-
                         <p>
                             Monitor de pantalla amplia con buena calidad de imagen, ideal para estudiar, trabajar y navegar por internet.
                         </p>
-
                         <p>
                             $539.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Monitor Xiaomi', 539000)">
                             Agregar al carrito
                         </button>
+                   </article>
 
-                    </div>
-
-
-
-                    <div>
-
+                    <article class="tarjeta-producto">
                         <img src="imagenes/monitor 2.jpeg" class="producto-img" alt="Monitor Hp">
-
                         <h3>Monitor Hp</h3>
-
                         <p>
                             Monitor moderno con pantalla de alta resolución y colores claros, adecuado para realizar tareas, ver videos y utilizar diferentes programas.
                         </p>
-
                         <p>
                             $412.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Monitor Hp', 412000)">
                             Agregar al carrito
                         </button>
+                    </article>
 
-                    </div>
-
-                        
-
-                    <div>
-
+                    <article class="tarjeta-producto">
                         <img src="imagenes/monitor 3.jpeg" class="producto-img" alt="Monitor lenovo">
-                        
                         <h3>Monitor lenovo</h3>
-
                         <p>
                             Monitor compacto y funcional, diseñado para ofrecer una visualización cómoda. Es ideal para actividades de oficina, estudio y uso diario.
                         </p>
-
                         <p>
                             $339.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Monitor lenovo', 339000)">
                             Agregar al carrito
                         </button>
+                    </article>
 
-                    </div>
-
-
-
-                </section>
-                
-                
-                
-
-            <!-- Producto categoria numero 4 -->
-                
-                
-                
-                <section>
-                    
-                    
-                    <div>
-
+                   <article class="tarjeta-producto">
                         <img src="imagenes/audifono 1.jpeg" class="producto-img" alt="Audifonos Logitech G435">
-
                         <h3>Audifonos Logitech G435</h3>
-
                         <p>
                             Audífonos inalámbricos ligeros y cómodos, diseñados para PC y videojuegos. Ofrecen buen sonido y permiten usarlos durante varias horas.
                         </p>
-
                         <p>
                             $209.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Audifonos Logitech G435', 209000)">
                             Agregar al carrito
                         </button>
+                   </article>
 
-                    </div>
-
-
-
-                    <div>
-
+                    <article class="tarjeta-producto">
                         <img src="imagenes/audifono 2.jpeg" class="producto-img" alt="Audifonos HyperX Cloud II">
-
                         <h3>Audifonos HyperX Cloud II</h3>
-
                         <p>
                             Audífonos gamer para PC con micrófono integrado y sonido envolvente. Su diseño cómodo los hace adecuados para jugar, escuchar música y realizar llamadas.
                         </p>
-
                         <p>
                             $183.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Audifonos HyperX Cloud II', 183000)">
                             Agregar al carrito
                         </button>
+                    </article>
 
-                    </div>
-
-
-
-                    <div>
-
+                    <article class="tarjeta-producto">
                         <img src="imagenes/audifono 3.jpeg" class="producto-img" alt="Audifonos Razer Kraken X">
-
                         <h3>Audifonos Razer Kraken X</h3>
-
                         <p>
                             Audífonos gamer con micrófono integrado y diseño ligero. Son una opción práctica para jugar en PC y disfrutar de un sonido claro.
                         </p>
-
                         <p>
                             $172.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Audifonos Razer Kraken X', 172000)">
                             Agregar al carrito
                         </button>
+                    </article>
 
-                    </div>
-
-
-
-                    <div>
-
+                    <article class="tarjeta-producto">
                         <img src="imagenes/audifono 4.jpeg" class="producto-img" alt="Audifonos Corsair HS55">
-
                         <h3>Audifonos Corsair HS55</h3>
-
                         <p>
                             Audífonos para PC con micrófono y almohadillas cómodas. Ofrecen sonido estéreo y son adecuados para videojuegos, música y videollamadas.
                         </p>
-
                         <p>
                             $143.000
                         </p>
-
-                        <button>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Audifonos Corsair HS55', 143000)">
                             Agregar al carrito
                         </button>
-
-                    </div>
-
-
+                    </article>
                 </section>
-
-
-
-                
-
+                   
             <!-- Seccion de contacto -->
-
-                <h2 id="contacto">
-                    Contacto
-                </h2>
-
+                <h2 id="contacto">Contacto</h2>
+                <p>
+                    ¿Tienes alguna pregunta? Comunícate con nosotros.
+                </p>
 
                 <p>
-                    ¿Tienes alguna pregunta? Comunícate con nosotros.</br>
-                    David Eduardo Puentes Castro</br>
-                    Nelson Orlando Lozano García</br>
-                    VICTOR ALFONSO HERNANDEZ MURILLO</br>
-                    Corporación Unificada Nacional de Educación Superior</br>
-                    PROGRAMACION WEB/53399/SEGUNDO BLOQUE/26P03</br>
+                    Correo: contacto@nexastore.com
+                </p>
+
+                
+                <p>
+                    Telefono: 313 214 0914
+                </p>
+
+                <p>
                     Bogota, Colombia
                 </p>
 
-                                <!-- Sección de Contacto Convertida en Formulario Requerido -->
-                <h2 id="contacto">Contacto</h2>
+                                <!-- Formulariode Contácto -->
                 <form id="form-contacto" class="formulario-contacto">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
@@ -409,21 +249,12 @@
 
                     <button type="submit">Enviar Mensaje</button>
                 </form>
-
+         </main>
             <!-- Pie de pagina -->
-
                 <footer>
-
-                    <p>
-                        NexaStore
-                    </p>
-
-                    <p>
-                        © 2026 NexaStore 
-                    </p>
-
+                    <p>Novatech</p>
+                    <p>© 2026 Novatech</p>
                 </footer>
-
                 <!-- Vinculación del script interactivo -->
                 <script src="scrip.js"></script>
 
